@@ -241,6 +241,13 @@
     .tab{
         font-size: 14px;
     }
+    .grant-loctaion-container{
+        width: auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
     .user-info-container p[data-temp] {
      font-size:1.2rem;
     font-weight: 600;
