@@ -243,7 +243,7 @@
     }
     .grant-loctaion-container{
         width: auto;
-        display: flex;
+        /* display: flex; */
         text-align: center;
         justify-content: center;
 
