@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-App  </title>
+    <link rel="icon" href="Images/favicon.ico">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+        <div class="tab-container"> 
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+        <div class="weather-container">
+            <!-- grant loctaion container -->
+            <div class=" sub-container grant-loctaion-container">
+                <img src="Images/location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+                </div>
+                 <!-- Search Weather form -->
+
+                 <form class="form-container" data-searchfrom>
+                    <input placeholder="Search For City..." data-searchInput>
+                    <button class="btn" type="submit">
+                        <img src="Images/search.png" alt="Search btn" width="20" height="20" loading="lazy">
+                    </button>
+                  </form>
+
+                  <!-- loading screen container -->
+                  <div class=" sub-container loading-container">
+                    <img src="Images/loading.gif" width="150" height="150">
+                    <p>Loading</p>
+                  </div>
+                <!-- <div class="notfound-container">
+                    <img src="Images/not-found.png" width="150" height="150">
+                </div> -->
+
+                  <!-- show weather info -->
+                  <div class="sub-container user-info-container">
+
+                    <!-- city name and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <img data-countryIcon>
+                    </div>
+                    <!-- weather description -->
+                    <p data-weatherDesc></p>
+                    <!-- weather Icon -->
+                    <img data-weatherIcon>
+                    <!-- weather temp -->
+                    <p data-temp></p>
+
+                    <div class="parameter-container">
+
+                        <!-- carrd -->
+                        <div class="parameter">
+                            <img src="Images/wind.png">
+                            <p>Windspeed</p>
+                            <p data-windspeed></p>
+                        </div>
+
+
+                        <!-- card2 -->
+
+                        <div class="parameter">
+                            <img src="Images/humidity.png">
+                            <p>Humidity</p>
+                            <p data-humidity></p>
+                        </div>
+
+                        <div class="parameter">
+                            <img src="Images/cloud.png">
+                            <p>Cloud</p>
+                            <p data-cloudiness></p>
+                        </div>
+                  </div>
+             </div>
+            <div class="sub-container error-container">
+                <img src="Images/not-found.png" alt="" width="150" height="150">
+                <p>City Not Found</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
